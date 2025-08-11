@@ -40,7 +40,7 @@ No.
 
 **Do you have more plans to update the mod ?**
 
-Yes, I plan to do EMP and Prometheum version of boomspears, and also add a way to repurpose a grenade into a boomspears.
+Yes, I plan to do EMP and Prometheum version of boomspears, and also add a way to repurpose a grenade into a boomspear.
 I also do have plans for a more fleshed and sensitive Tribal rebalance and overhaul.
 
 ### Special Thanks

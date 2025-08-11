@@ -1,0 +1,47 @@
+<img width="640" height="360" alt="Preview" src="https://github.com/user-attachments/assets/639debad-2b37-4bc5-9119-48ec0e14730b" />
+
+# CE - Tribal Boomspears
+
+Inspired by Mad-Max Fury Road and WW2 Asian anti-tank skills, we proudly want you the *Boomspears!*. 
+
+Boomspears are throwable, highly dangerous both for users and for foes, explosive javelin designed to be a true alternative to stickbombs and molotovs. 
+It is highly effective against armored pawns and mechs, at the cost of unprecise shots and dangerous range of use. 
+Ennemy tribals will come equipped with it so, be aware of that before they reach your walls and transform themselves, their firends and you into bloody fireworks.
+
+Imagine it as a pila with a homemade and rudimentary explosive charge at the end.
+
+# FAQ 
+
+**How to craft ?**
+
+First research Gunpowder, and you can craft it at crafting spot or at any smithing bench.
+
+**Moh boomspear are OP !**
+
+They are meant to pose a serious challenge to the player, since Tribals even in CE lacks real flavour and tools.
+You need some FSX, 1 steel slag, and some wood or some steel to craft them.
+
+**Can I use it as a melee weapon ?**
+
+Yes.
+
+**Vanilla ?**
+
+No.
+
+**Steam Worshop ?**
+
+No.
+
+**Do you have more plans to update the mod ?**
+
+Yes, I plan to do EMP and Prometheum version of boomspears, and also add a way to repurpose a grenade into a boomspears.
+I also do have plans for a more fleshed and sensitive Tribal rebalance and overhaul.
+
+### Special Thanks
+
+Serina for the wonderfull art, finally it had some use!
+the CE team
+the CE server for ideas, balance and support!
+
+join me on discord for feedback and ideas : @cyreneen

@@ -36,7 +36,7 @@ No.
 
 **Steam Workshop ?**
 
-No.
+~~No.~~ Yes, thanks to Keshash  https://steamcommunity.com/sharedfiles/filedetails/?id=3547090314
 
 **Do you have more plans to update the mod ?**
 

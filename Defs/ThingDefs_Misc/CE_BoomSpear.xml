@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Projectile -->
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>CE_Proj_Boomspear</defName>
+		<label>boomspear</label>
+		<graphicData>
+			<texPath>Things/Projectile/Boomspear/Boomspear</texPath> 
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>3.0</explosionRadius> <!-- stickbombs but better and really more dangerous -->
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>133</damageAmountBase> 
+			<explosionDelay>0</explosionDelay> <!-- set to 0 = explode on impact -->
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<dropsCasings>true</dropsCasings>
+			<casingMoteDefname>Fleck_GrenadePin</casingMoteDefname>
+			<casingFilthDefname>Filth_GrenadeAmmoCasings</casingFilthDefname>
+			<speed>14</speed> <!-- speed of CE pila -->
+			<screenShakeFactor>0.5</screenShakeFactor>
+			<suppressionFactor>3.0</suppressionFactor>
+			<dangerFactor>2.0</dangerFactor>
+			<airborneSuppressionFactor>0.25</airborneSuppressionFactor>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>10</Fragment_Small> 
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- Boomspear  -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseEquipment">
+		<defName>CE_ThrowableBoomspear</defName>
+		<label>boomspear</label>
+		<description>A rudimentary thrown explosive weapon, made by assembling a scrap-metal canister containing FSX and some piercing fragments to a piece of wood or metal.\n\nWhile it is very dangerous to use and not really precise, it is an all-timer weapon of choice on the Rim for various tribes.\nThis weapon has been especially involved to be the cause of many skirmishes won by low-tech societies against overconfident Outlanders and even some mid-tech armies.\nIt's high velocity, cheap cost, and high damage makes it worthy for any suicide candidate.</description>
+		<graphicData>
+			<texPath>Things/Ammo/Boomspear</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+		</graphicData>
+		<thingClass>CombatExtended.AmmoThing</thingClass>
+		<tickerType>Normal</tickerType>				
+		<soundInteract>Interact_BeatFire</soundInteract> <!-- pila sound -->
+		<techLevel>Neolithic</techLevel>
+		<equippedAngleOffset>30</equippedAngleOffset>
+		<stackLimit>25</stackLimit>		
+		<statBases>
+			<SightsEfficiency>1.0</SightsEfficiency>
+			<ShotSpread>1.5</ShotSpread>
+			<SwayFactor>2.5</SwayFactor> <!-- heavier than a pila, less accurate -->
+			<Bulk>4.5</Bulk>
+			<Mass>3.2</Mass>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<MeleeCounterParryBonus>0.28</MeleeCounterParryBonus>
+		</statBases>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.12</MeleeCritChance>
+			<MeleeParryChance>0.5</MeleeParryChance>
+			<MeleeDodgeChance>0.65</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<generateCommonality>0.3</generateCommonality>
+		<weaponTags>
+			<li>Neolithic</li>
+			<li>CE_AI_Grenade</li>			
+			<li>CE_OneHandedWeapon</li>
+			<li>CE_Boomspear</li>
+			<li>CE_GrenadeNeolithic</li>	
+		</weaponTags>
+		<weaponClasses>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>		
+		<tradeability>All</tradeability>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<label>throw boomspear</label>
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<minRange>1.5</minRange> <!-- CQC is dangerous -->				
+				<defaultProjectile>CE_Proj_Boomspear</defaultProjectile> 
+				<warmupTime>0.8</warmupTime>
+				<range>9</range> <!-- same range as pila, making it a kamikaze shit -->
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>				
+				<soundCast>ThrowGrenade</soundCast> 
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations> 
+				</targetParams>
+				<onlyManualCast>true</onlyManualCast>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius> 
+			</li>
+		</verbs>
+		<detonateProjectile>CE_Proj_Boomspear</detonateProjectile>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.58</cooldownTime>
+				<chanceFactor>1.33</chanceFactor>				
+				<armorPenetrationBlunt>2.33</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>shaft</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.68</cooldownTime>
+				<armorPenetrationBlunt>1.26</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+		</tools>
+<!-- 		<tradeTags>
+			<li>CE_MediumAmmo</li>
+		</tradeTags> -->		
+		<!-- <ammoClass>Javelin</ammoClass>  TO DO -->
+	</ThingDef>
+
+	<!-- Recipes -->
+
+	<RecipeDef ParentName="AmmoRecipeNeolithicBase">
+		<defName>MakeAmmo_BoomspearWood</defName>
+		<label>make boomspear x5 (from wood)</label>
+		<description>Craft 5 boomspears.</description>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<effectWorking>Smelt</effectWorking>
+		<unfinishedThingDef>UnfinishedAmmo</unfinishedThingDef>
+		<workAmount>3800</workAmount>
+		<jobString>Making boomspear.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<!-- FSX -->
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<!-- Scrap Metal -->
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSlagSteel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+				<li>FSX</li>
+				<li>ChunkSlagSteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<CE_ThrowableBoomspear>5</CE_ThrowableBoomspear>
+		</products>
+		<displayPriority>500</displayPriority>
+		<researchPrerequisite>CE_Gunpowder</researchPrerequisite>		
+	</RecipeDef>
+
+	<!-- from steel -->
+
+	<RecipeDef ParentName="AmmoRecipeNeolithicBase">
+		<defName>MakeAmmo_BoomspearSteel</defName>
+		<label>make boomspear x5 (from steel)</label>
+		<description>Craft 5 boomspears.</description>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<effectWorking>Smelt</effectWorking>
+		<unfinishedThingDef>UnfinishedAmmo</unfinishedThingDef>
+		<workAmount>3600</workAmount>
+		<jobString>Making boomspear.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<!-- FSX -->
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<!-- Scrap Metal -->
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSlagSteel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ChunkSlagSteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<CE_ThrowableBoomspear>5</CE_ThrowableBoomspear>
+		</products>
+		<displayPriority>500</displayPriority>
+	</RecipeDef>	
+
+</Defs>

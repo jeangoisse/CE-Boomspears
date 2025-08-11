@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Add chance to spawn on tribal warrior (= sapper tribal because Tynan decided) -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Tribal_Warrior"]/weaponTags</xpath>
+		<value>
+			<li>CE_Boomspear</li>
+		</value>
+	</Operation>
+
+	<!-- adjustment -->	
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Tribal_Warrior"]/combatPower</xpath>
+		<value>
+			<combatPower>28</combatPower>
+		</value>
+	</Operation>
+
+</Patch>

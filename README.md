@@ -4,7 +4,7 @@
 
 ##### *This is a testing release, all feedback, ideas and balance discussion are highly welcome!*
 
-Inspired by Mad-Max Fury Road and WW2 Asian anti-tank skills, we proudly want you the *Boomspears!*. 
+Inspired by Mad-Max Fury Road and WW2 Asian anti-tank skills, we proudly present you the *Boomspears!*. 
 
 Boomspears are throwable, highly dangerous both for users and for foes, explosive javelin designed to be a true alternative to stickbombs and molotovs. 
 It is highly effective against armored pawns and mechs, at the cost of unprecise shots and a relatively dangerous range of use. 

@@ -10,7 +10,10 @@ Boomspears are throwable, highly dangerous both for users and for foes, explosiv
 It is highly effective against armored pawns and mechs, at the cost of unprecise shots and dangerous range of use. 
 Ennemy tribals will come equipped with it so, be aware of that before they reach your walls and transform themselves, their firends and you into bloody fireworks.
 
-Imagine it as a pila with a homemade and rudimentary explosive charge at the end.
+Imagine it as a pila with a homemade and rudimentary explosive charge at the end :
+
+<img width="1183" height="621" alt="2025-08-11 22_03_49-RimWorld by Ludeon Studios" src="https://github.com/user-attachments/assets/ede033fa-d1ba-4eff-b2f7-4f7adef3756a" />
+
 
 # FAQ 
 

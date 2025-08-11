@@ -9,14 +9,23 @@
 			<li>CE_Boomspear</li>
 		</value>
 	</Operation>
-
 	<!-- adjustment -->	
-
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/PawnKindDef[defName="Tribal_Warrior"]/combatPower</xpath>
 		<value>
-			<combatPower>28</combatPower>
+			<combatPower>30</combatPower>
 		</value>
 	</Operation>
+
+
+	<!-- patch CE Grenadier -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="CE_Tribal_Grenadier"]/weaponTags</xpath>
+		<value>
+			<li>CE_Boomspear</li>
+		</value>
+	</Operation>
+
 
 </Patch>

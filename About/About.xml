@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-	<name>CE - Tribal Tweaks</name>
-	<author>cyr</author>
-	<packageId>cyr.tribaltweaks</packageId>
+	<name>CE - Tribal Boomspears</name>
+	<author>cyr, serina</author>
+	<packageId>ce.tribalboom</packageId>
 	<supportedVersions>
 		<li>1.6</li>		
 	</supportedVersions>
-
 	<modDependenciesByVersion>
 		<v1.6>
 		<li>
@@ -22,7 +21,7 @@
 		<li>CETeam.CombatExtended</li>
 	</loadAfter>	
 	<description>
-kaboom.
+Throwable suicide sticks for tribals.\nart by Serina, XML by Cyreneen.
 	</description>
 
 </ModMetaData>

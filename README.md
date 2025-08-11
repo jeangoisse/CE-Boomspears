@@ -15,11 +15,11 @@ Imagine it as a pila with a homemade and rudimentary explosive charge at the end
 **How to craft ?**
 
 First research Gunpowder, and you can craft it at crafting spot or at any smithing bench.
+You need some FSX, 1 steel slag, and some wood or some steel to craft them.
 
 **Moh boomspear are OP !**
 
-They are meant to pose a serious challenge to the player, since Tribals even in CE lacks real flavour and tools.
-You need some FSX, 1 steel slag, and some wood or some steel to craft them.
+They are meant to pose a serious challenge to the player, since Tribals even in CE lacks real flavour and tools. Now they should be much more a threat as they should be.
 
 **Can I use it as a melee weapon ?**
 

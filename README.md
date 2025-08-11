@@ -2,6 +2,8 @@
 
 # CE - Tribal Boomspears
 
+##### *This is a testing release, all feedback, ideas and balance discussion are highly welcome!*
+
 Inspired by Mad-Max Fury Road and WW2 Asian anti-tank skills, we proudly want you the *Boomspears!*. 
 
 Boomspears are throwable, highly dangerous both for users and for foes, explosive javelin designed to be a true alternative to stickbombs and molotovs. 

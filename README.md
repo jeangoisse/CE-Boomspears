@@ -8,7 +8,7 @@ Inspired by Mad-Max Fury Road and WW2 Asian anti-tank skills, we proudly want yo
 
 Boomspears are throwable, highly dangerous both for users and for foes, explosive javelin designed to be a true alternative to stickbombs and molotovs. 
 It is highly effective against armored pawns and mechs, at the cost of unprecise shots and dangerous range of use. 
-Ennemy tribals will come equipped with it so, be aware of that before they reach your walls and transform themselves, their firends and you into bloody fireworks.
+Ennemy tribals will come equipped with it so, be aware of that before they reach your walls and transform themselves, their friends and you into some bloody fireworks.
 
 Imagine it as a pila with a homemade and rudimentary explosive charge at the end :
 

@@ -34,7 +34,7 @@ Yes.
 
 No.
 
-**Steam Worshop ?**
+**Steam Workshop ?**
 
 No.
 
